@@ -1,2 +1,2 @@
-# Go_Lambda_Serverlesss
-Go + Lambda_Serverlesss
+# Go_Lambda_Serverless
+Go + Lambda_Serverless
