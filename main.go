@@ -24,9 +24,10 @@ type Picture struct {
 	Image_url string `json:"image_url"`
 }
 
+// Must함수 에러처리
 func HandleRequest(ctx context.Context, myInput MyEvent) (string, error) {
 	sess := session.Must(session.NewSessionWithOptions(session.Options{
-		SharedConfigState: session.SharedConfigEnable,
+		SharedConfigState: session.SharedConfigEnable, // 자격증명
 	}))
 
 	// Create DynamoDB client
